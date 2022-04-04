@@ -1,0 +1,17 @@
+html{
+background-color: gray
+}
+
+#srodkowy {
+    background-color: #FFCCCC;
+    width: 20%;
+    height: 550px;
+    float: left;
+}
+
+button{
+border: 0px;
+padding: 20px;
+background-color: red;
+color: white;
+}

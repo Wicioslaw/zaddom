@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>Dywany</title>
+        <link rel = "stylesheet" type="text/css" href="styl6.css">
+        <script> 
+function oblicz(){
+    var x = document.getElementById("num").value;
+    var y = document.getElementById("num2").value;
+    var suma;
+    suma= x*y;
+    
+    if(suma % 2 != 0){
+    suma = Math.ceil(suma);
+     }
+    if(suma % 2 != 0){ 
+        suma = suma + 1 }
+    
+
+    
+document.getElementById("koszt").innerHTML = "Musisz kupić " +suma+ " metry/ów wykładziny";
+}
+        </script>
+    </head>
+
+
+    <body>
+            <div id="srodkowy">
+                    <h2>Policz metry dywanu</h2><br>
+                Długość: <input id="num"><br>
+                Szerokość: <input id="num2"><br>
+            <button onclick="oblicz()">Kalkulacja</button><br>
+            Razem:<p id="koszt"></p>
+        </div>
+    <div id="srodkowy">
+<p><strong>Zegar</strong></p>
+        <div id="zegarek"> </div> 
+
+ 
+<script type="text/javascript">
+
+function zegar() {
+var data = new Date();
+var godzina = data.getHours();
+var min = data.getMinutes();
+var sek = data.getSeconds();
+ var terazjest = ""+godzina+
+((min<10)?":0":":")+min+
+((sek<10)?":0":":")+sek;
+document.getElementById("zegarek").innerHTML = terazjest;
+setTimeout("zegar()", 1000); }
+zegar();
+
+
+alert("UWAGA! \nZainstaluj więcej pamięci RAM")
+
+</script>
+        </div>
+        <div id="srodkowy">
+<br>
+            <strong>Ilość odwiedzin: </strong>
+            
+  <script type = "text/javascript" src = "http://www.deszczowce.pl/licznik/licznik.php?id=121272067"></script>
+            
+            
+        </div>
+        
+    </body>
+</html>
